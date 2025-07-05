@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>it.stopcode</groupId>
-	<artifactId>api-bibilioteca</artifactId>
+	<artifactId>api-biblioteca</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>api-bibilioteca</name>
 	<description>Progetto Spring Boot sulla creazione di un API REST di una biblioteca</description>
