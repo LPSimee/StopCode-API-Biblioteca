@@ -7,11 +7,13 @@ public class Book {
     private String id;
     private String title;
     private String author;
-    private Date publishYear;
+    private Date publishYear; // Cercando su Internet, dovrebbe essere meglio usare LocalDate al posto di Date
 
     public String getId() {
         return id;
     }
+
+    // Da mettere nel controller o service: String requestId = UUID.randomUUID().toString();
 
     public void setId(String id) {
         this.id = id;
