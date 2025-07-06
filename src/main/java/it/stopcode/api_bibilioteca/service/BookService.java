@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 @Service
 public class BookService {
@@ -21,6 +22,7 @@ public class BookService {
     }
 
     public Book addNewBook(Book book) {
+        book.setId(UUID.randomUUID().toString());
         this.books.add(book);
         return book;
     }
