@@ -37,7 +37,7 @@ public class BookService {
         return null;
     }
 
-    public boolean removeBook(String id) {
+    public boolean deleteBook(String id) {
         return this.books.removeIf(book -> book.getId().equals(id));
     }
 }

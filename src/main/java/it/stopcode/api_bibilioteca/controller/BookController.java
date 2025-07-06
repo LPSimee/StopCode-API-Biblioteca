@@ -49,4 +49,11 @@ public class BookController {
             return ResponseEntity.ok(updatedBook);
         }
     }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteBook(@PathVariable String id) {
+        boolean deleted = bookService.deleteBook(id);
+        if(deleted) return ResponseEntity.noContent().build();
+        return ResponseEntity.notFound().build();
+    }
 }
