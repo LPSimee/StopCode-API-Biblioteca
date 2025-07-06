@@ -40,4 +40,13 @@ public class BookController {
         return ResponseEntity.status(HttpStatus.CREATED).body(addedBook);
     }
 
+    @PutMapping("/{id}")
+    public ResponseEntity<Book> updateBook (@PathVariable String id, @RequestBody Book book) {
+        Book updatedBook = this.bookService.updateBook(id, book);
+        if(updatedBook == null) {
+            return ResponseEntity.notFound().build();
+        } else {
+            return ResponseEntity.ok(updatedBook);
+        }
+    }
 }

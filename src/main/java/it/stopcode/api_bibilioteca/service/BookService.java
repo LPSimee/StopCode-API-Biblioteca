@@ -22,7 +22,7 @@ public class BookService {
     }
 
     public Book addNewBook(Book book) {
-        book.setId(UUID.randomUUID().toString());
+        // book.setId(UUID.randomUUID().toString());
         this.books.add(book);
         return book;
     }
@@ -34,7 +34,6 @@ public class BookService {
                 return book;
             }
         }
-
         return null;
     }
 

@@ -1,7 +1,6 @@
 package it.stopcode.api_bibilioteca.model;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 public class Book {
 
